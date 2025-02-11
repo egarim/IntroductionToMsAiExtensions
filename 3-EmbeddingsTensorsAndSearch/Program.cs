@@ -7,6 +7,16 @@ namespace EmbeddingsTensorsAndSearch
     {
         static async Task Main(string[] args)
         {
+            //zip
+
+            //IEmbeddingGenerator<string, Embedding<float>> embeddingGenerator = new OllamaEmbeddingGenerator(new Uri("http://127.0.0.1:11434"), modelId: "all-minilm:latest");
+
+            //var strings = this.View.ObjectSpace.GetObjectsQuery<XpoEmbedding>().Select(x => x.Text).ToList();
+
+            //(string Value, Embedding<float> Embedding)[] ZipEmbeddings = await embeddingGenerator.GenerateAndZipAsync(strings);
+
+
+
             //IEmbeddingGenerator<string, Embedding<float>> embeddingGenerator = new OllamaEmbeddingGenerator(new Uri("http://127.0.0.1:11434"), modelId: "all-minilm:latest");
 
 

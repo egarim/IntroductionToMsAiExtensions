@@ -7,5 +7,14 @@
 		<Nullable>enable</Nullable>
 		<RootNamespace>Pipelines</RootNamespace>
 	</PropertyGroup>
+	<!--Microsoft.Extensions.AI-->
+	<ItemGroup>
+		<PackageReference Include="Microsoft.Extensions.AI" Version="9.0.1-preview.1.24570.5" />
+		<PackageReference Include="Microsoft.Extensions.AI.Abstractions" Version="9.0.1-preview.1.24570.5" />
 
+		<!-- Ollama Implementation -->
+		<PackageReference Include="Microsoft.Extensions.AI.Ollama" Version="9.0.1-preview.1.24570.5" />
+		<!-- OpenAi Implementation -->
+		<PackageReference Include="Microsoft.Extensions.AI.OpenAI" Version="9.0.1-preview.1.24570.5" />
+	</ItemGroup>
 </Project>

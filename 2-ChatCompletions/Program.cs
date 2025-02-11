@@ -34,6 +34,15 @@ namespace ChatClientAbstractions
 
             var Result = await CurrentClient.CompleteAsync(Prompt, ChatOptions);
 
+            //image content
+
+            //ChatMessage Message = new ChatMessage(ChatRole.User, "Describe what is in the picture in 500 or less characters");
+
+            //Message.Contents.Add(new ImageContent(CurrentDetail.Image.MediaData, "image/jpg"));
+            //var Client = ChatClientHelper.GetChatClient();
+            //var Result = await Client.CompleteAsync(new List<ChatMessage>() { Message });
+
+
             Console.ForegroundColor = ConsoleColor.Green;
             Console.WriteLine(Result.Message);
             Console.ReadKey();
