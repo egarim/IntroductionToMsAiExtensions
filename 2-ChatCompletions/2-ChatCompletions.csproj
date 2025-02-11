@@ -5,10 +5,10 @@
 		<TargetFramework>net9.0</TargetFramework>
 		<ImplicitUsings>enable</ImplicitUsings>
 		<Nullable>enable</Nullable>
-		<RootNamespace>ChatClientAbstractions</RootNamespace>
+		<RootNamespace>ChatCompletions</RootNamespace>
 	</PropertyGroup>
 
-
+	<!--Microsoft.Extensions.AI-->
 	<ItemGroup>
 		<PackageReference Include="Microsoft.Extensions.AI" Version="9.0.1-preview.1.24570.5" />
 		<PackageReference Include="Microsoft.Extensions.AI.Abstractions" Version="9.0.1-preview.1.24570.5" />
