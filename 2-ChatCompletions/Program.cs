@@ -46,11 +46,11 @@ namespace ChatCompletions
 
             //image content
 
-            //ChatMessage Message = new ChatMessage(ChatRole.User, "Describe what is in the picture in 500 or less characters");
+            ChatMessage Message = new ChatMessage(ChatRole.User, "Describe what is in the picture in 500 or less characters");
+            ReadOnlyMemory<byte> Image = File.ReadAllBytes("puppy.jpg");
+            Message.Contents.Add(new ImageContent(Image, "image/jpg"));
 
-            //Message.Contents.Add(new ImageContent(CurrentDetail.Image.MediaData, "image/jpg"));
-            //var Client = ChatClientHelper.GetChatClient();
-            //var Result = await Client.CompleteAsync(new List<ChatMessage>() { Message });
+            Result = await CurrentClient.CompleteAsync(new List<ChatMessage>() { Message });
 
         }
         private static IChatClient GetChatClientOpenAiImp(string ApiKey, string ModelId)
