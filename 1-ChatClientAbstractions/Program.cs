@@ -7,12 +7,12 @@ namespace ChatClientAbstractions
     {
         static IChatClient CurrentClient;
         static string OpenAiModelId = "gpt-4o";
-        static string OllamaModelId = " phi3";
+        static string OllamaModelId = " phi3:latest";
         static async Task Main(string[] args)
         {
 
-            CurrentClient = GetChatClientOpenAiImp(Environment.GetEnvironmentVariable("OpenAiTestKey"), OpenAiModelId);
-            //CurrentClient=GetChatClientGetOllamaImp("http://127.0.0.1:11434/", OllamaModelId);
+            //CurrentClient = GetChatClientOpenAiImp(Environment.GetEnvironmentVariable("OpenAiTestKey"), OpenAiModelId);
+            CurrentClient=GetChatClientGetOllamaImp("http://127.0.0.1:11434/", OllamaModelId);
 
 
             var Prompt = "Describe what is c# in 20 words";
@@ -31,7 +31,6 @@ namespace ChatClientAbstractions
 
             return new OpenAIChatClient(openAIClient, ModelId)
                 .AsBuilder()
-                .UseFunctionInvocation()
                 .Build();
         }
         private static IChatClient GetChatClientGetOllamaImp(string endpoint, string modelId)
@@ -39,7 +38,6 @@ namespace ChatClientAbstractions
 
             return new OllamaChatClient(endpoint, modelId: modelId)
                 .AsBuilder()
-                .UseFunctionInvocation()
                 .Build();
         }
     }

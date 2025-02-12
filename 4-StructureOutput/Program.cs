@@ -10,7 +10,10 @@ namespace StructureOutput
         static async Task Main(string[] args)
         {
             CurrentClient = GetChatClientOpenAiImp(Environment.GetEnvironmentVariable("OpenAiTestKey"), OpenAiModelId);
-            var Message = new ChatMessage(ChatRole.User, "Analyze this images to count the number of black cats, white cats, other animals and objects that are NOT animals");
+            var Message = new ChatMessage(ChatRole.User, 
+                "Analyze this images to count the number of black cats, " +
+                "white cats, other animals " +
+                "and objects that are NOT animals");
 
             //read the bytes of the image Cats.jpg
             byte[] catsBytes = File.ReadAllBytes("Cats.jpg");

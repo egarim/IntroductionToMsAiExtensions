@@ -68,7 +68,7 @@ namespace EmbeddingsTensorsAndSearch
 
 
 
-            var parameterValue = "What is A.I";
+            var parameterValue = "What is A.I?";
             
             Embedding<float> InputEmbedding = await embeddingGenerator.GenerateEmbeddingAsync(parameterValue);
 
