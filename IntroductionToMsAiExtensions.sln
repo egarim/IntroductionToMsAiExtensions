@@ -9,7 +9,7 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "5-Pipelines", "5-Pipelines\
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "1-ChatClientAbstractions", "1-ChatClientAbstractions\1-ChatClientAbstractions.csproj", "{CD265C1B-5E19-4E9E-8912-D190EFBB3F00}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "2-ChatCompletionsAndMessageContent", "2-ChatCompletions\2-ChatCompletionsAndMessageContent.csproj", "{4314CFE9-B316-4181-8FC9-A8058C220522}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "2-ChatCompletions", "2-ChatCompletions\2-ChatCompletions.csproj", "{4314CFE9-B316-4181-8FC9-A8058C220522}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "3-ChatMessage", "3-ChatMessage\3-ChatMessage.csproj", "{79069D53-5B9C-3F62-F363-B0E45FF9ACC9}"
 EndProject

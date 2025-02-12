@@ -44,13 +44,7 @@ namespace ChatCompletions
             Console.ForegroundColor = ConsoleColor.Green;
 
 
-            //image content
-
-            ChatMessage Message = new ChatMessage(ChatRole.User, "Describe what is in the picture in 500 or less characters");
-            ReadOnlyMemory<byte> Image = File.ReadAllBytes("puppy.jpg");
-            Message.Contents.Add(new ImageContent(Image, "image/jpg"));
-
-            Result = await CurrentClient.CompleteAsync(new List<ChatMessage>() { Message });
+          
 
         }
         private static IChatClient GetChatClientOpenAiImp(string ApiKey, string ModelId)
