@@ -12,6 +12,8 @@
 		<PackageReference Include="Microsoft.Extensions.AI" Version="9.0.1-preview.1.24570.5" />
 		<PackageReference Include="Microsoft.Extensions.AI.Abstractions" Version="9.0.1-preview.1.24570.5" />
 
+		<!-- Rate Limiting -->
+		<PackageReference Include="System.Threading.RateLimiting" Version="9.0.0" />
 		<!-- Ollama Implementation -->
 		<PackageReference Include="Microsoft.Extensions.AI.Ollama" Version="9.0.1-preview.1.24570.5" />
 		<!-- OpenAi Implementation -->
