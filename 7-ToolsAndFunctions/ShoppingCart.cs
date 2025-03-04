@@ -13,6 +13,7 @@ namespace ToolsAndFunctions
         public int NumPairOfSocks { get; set; }
         public decimal Total { get; set; }
 
+        [Description("Add socks to the shopping cart")]
         public void AdSocksToCart(int NumOfPairs)
         {
             NumPairOfSocks += NumOfPairs;

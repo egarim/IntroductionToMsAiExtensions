@@ -9,7 +9,7 @@ namespace EmbeddingsTensorsAndSearch
     internal class Program
     {
         static IChatClient CurrentClient;
-        static string OpenAiModelId = "gpt-4o";
+     
         static async Task Main(string[] args)
         {
             Console.ForegroundColor = ConsoleColor.White;
@@ -91,13 +91,6 @@ namespace EmbeddingsTensorsAndSearch
            
 
         }
-        private static IChatClient GetChatClientOpenAiImp(string ApiKey, string ModelId)
-        {
-            OpenAIClient openAIClient = new OpenAIClient(ApiKey);
-
-            return new OpenAIChatClient(openAIClient, ModelId)
-                .AsBuilder()
-                .Build();
-        }
+    
     }
 }
