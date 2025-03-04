@@ -27,6 +27,8 @@ namespace ToolsAndFunctions
             {
                 Tools = [GetPriceTool, AddCartTook]
             };
+
+
             Console.WriteLine("Type 'exit' to quit the chat.");
             while (true)
             {
